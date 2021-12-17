@@ -4,11 +4,12 @@ module.exports = {
   ],
   theme: {
     colors: {
-      primary: "#457b9d",
-      secondary: "#1d3557",
-      tertiary: "#a8dadc",
-      highlight: "#e63946",
+      primary: "#1d573f",
+      secondary: "#469e76",
+      tertiary: "#a7dbc0",
+      highlight: "#88614a",
       neutral: "#f1faee",
+      white: '#ffffff',
     },
     extend: {
       height: {
@@ -32,6 +33,9 @@ module.exports = {
         "70p": '70%',
         "80p": '80%',
         "90p": '90%',
+      },
+      backgroundImage : {
+        "forest": "url('/static/images/forest_crop.jpg')"
       }
     },
   },
