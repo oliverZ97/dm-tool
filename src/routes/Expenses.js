@@ -1,6 +1,6 @@
 export default function Expenses() {
     return (
-      <main style={{ padding: "1rem 0" }}>
+      <main>
         <h2>Expenses</h2>
       </main>
     );
