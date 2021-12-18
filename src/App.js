@@ -1,6 +1,5 @@
 import "./App.css";
 import { Link, Route, Routes } from "react-router-dom";
-import MainContentCard from "./components/MainContentCard";
 import Invoices from "./routes/Invoices";
 import Expenses from "./routes/Expenses";
 import Home from "./routes/Home";
