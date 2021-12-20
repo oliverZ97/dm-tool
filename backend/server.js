@@ -5,6 +5,7 @@ const cors = require('cors')
 const db = require('./db')
 const movieRouter = require('./routes/test-router')
 const blogentryRouter = require('./routes/blogentry-router')
+const locationRouter = require('./routes/location-router')
 
 const app = express()
 const apiPort = 4100
@@ -21,5 +22,6 @@ app.get('/', (req, res) => {
 
 app.use('/api', movieRouter)
 app.use('/api', blogentryRouter)
+app.use('/api', locationRouter)
 
 app.listen(apiPort, () => console.log(`Server running on port ${apiPort}`))

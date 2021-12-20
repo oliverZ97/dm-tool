@@ -33,6 +33,7 @@ module.exports = {
         "70p": '70%',
         "80p": '80%',
         "90p": '90%',
+        "50x": 'calc(50% - 0.25rem)'
       },
       backgroundImage : {
         "forest": "url('/static/images/forest_crop.jpg')"

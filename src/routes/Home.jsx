@@ -29,10 +29,9 @@ const Home = () => {
   };
 
   return (
-   <main>
-     
+   <main className="flex flex-row flex-wrap content-start">
      {state.isLoading === false && state.data.map((entry) => {
-       return <BlogCard key={entry._id} entrydata={entry}></BlogCard>
+       return <div className="px-2 w-50x"><BlogCard key={entry._id} entrydata={entry}></BlogCard></div>
      })}
    </main>
   )
