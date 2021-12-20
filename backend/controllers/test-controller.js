@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const Movie = require('../models/test-model')
 
 createMovie = (req, res) => {
