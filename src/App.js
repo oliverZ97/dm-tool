@@ -6,9 +6,9 @@ import Home from "./routes/Home";
 
 function App() {
   return (
-    <div className="bg-forest bg-center bg-cover flex flex-grow">
-      <div className=" flex flex-col flex-grow items-center m-10">
-        <div className="w-90p h-20 rounded-lg relative">
+    <div className="bg-forest bg-center bg-cover flex flex-grow overflow-hidden">
+      <div className="w-full flex flex-col justify-start items-center p-10">
+        <div className="w-90p min-h-20 h-20 rounded-lg relative">
           <div className="w-full h-full bg-neutral backdrop-blur-lg opacity-60 rounded-lg absolute inset-0"></div>
           <nav className="w-full h-full shadow-xl rounded-lg flex flex-row justify-between items-center relative">
             <ul className="flex flex-row justify-start items-center">
@@ -35,13 +35,15 @@ function App() {
             </div>
           </nav>
         </div>
-        <div className="w-90p flex-grow flex justify-end items-end">
-          <div className="bg-neutral shadow-xl w-full h-90p rounded-lg p-8 background-blur-lg opacity-90">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/invoices" element={<Invoices />} />
-              <Route path="/expenses" element={<Expenses />} />
-            </Routes>
+        <div className="w-90p h-50p flex-grow flex justify-center items-start pt-8">
+          <div className="bg-neutral shadow-xl w-full h-full rounded-lg p-8 background-blur-lg opacity-90">
+            <div className="overflow-scroll h-full">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/invoices" element={<Invoices />} />
+                <Route path="/expenses" element={<Expenses />} />
+              </Routes>
+            </div>
           </div>
         </div>
       </div>

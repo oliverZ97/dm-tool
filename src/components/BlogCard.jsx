@@ -6,7 +6,7 @@ const BlogCard = (props) => {
     console.log(props);
   }, [])
   return (
-    <div className="bg-tertiary rounded-lg flex flex-row justify-between h-60 overflow-hidden ">
+    <div className="bg-tertiary rounded-lg flex flex-row justify-between h-60 overflow-hidden mb-4">
         <img
           className="h-full w-40p object-cover object-center rounded-tl-lg rounded-bl-lg"
           src="https://source.unsplash.com/random"
