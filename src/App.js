@@ -1,8 +1,9 @@
 import "./App.css";
 import { Link, Route, Routes } from "react-router-dom";
-import Invoices from "./routes/Invoices";
+import Admin from "./routes/Admin";
 import Expenses from "./routes/Expenses";
 import Home from "./routes/Home";
+import LocationPicker from "./routes/LocationPicker";
 
 function App() {
   return (
@@ -16,10 +17,13 @@ function App() {
                 <Link to="/">Home</Link>
               </li>
               <li className="mx-4">
-                <Link to="/invoices">Location Picker</Link>
+                <Link to="/locationpicker">Location Picker</Link>
               </li>
               <li className="mx-4">
                 <Link to="/expenses">Item Cards</Link>
+              </li>
+              <li className="mx-4">
+                <Link to="/admin">Admin</Link>
               </li>
             </ul>
             <div className="h-full bg-primary opacity-100 flex flex-row">
@@ -40,8 +44,9 @@ function App() {
             <div className="overflow-scroll h-full">
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/invoices" element={<Invoices />} />
+                <Route path="/locationpicker" element={<LocationPicker />} />
                 <Route path="/expenses" element={<Expenses />} />
+                <Route path="/admin" element={<Admin />} />
               </Routes>
             </div>
           </div>
